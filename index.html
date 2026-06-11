@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>Curriculum Vitae</title>
 </head>
+
 <body>
     <h1>Bienvenido a mi Curriculum Vitae</h1>
     <section id="table-of-contents" class="fullbox">
-    <h2 class="subtitle" id="titulo-tabla">Tabla de contenido</h2>
-    <nav>
-        <ul>
-            <li><a href="#personal-info">Información Personal</a></li>
-            <li><a href="#summary">Resumen</a></li>
-            <li><a href="#education">Educación</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#work-experience">Experiencia Laboral</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+        <h2 class="subtitle" id="titulo-tabla">Tabla de contenido</h2>
+        <nav>
+            <ul>
+                <li><a href="#personal-info">Información Personal</a></li>
+                <li><a href="#summary">Resumen</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#work-experience">Experiencia Laboral</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </section>
-    <section id="personal-info">
-        <h2 class="subtitle">Nombre</h2>
-        <p id="name">Julio Cesar Llerena Campi</p>
-        <figure>
-            <img src="https://picsum.photos/200" alt="Foto de perfil" id="photo">
-            <figcaption>Foto de perfil</figcaption>
-        </figure>
-    </section>
-    <section id="summary">
-        <h2 class="subtitle">Resumen</h2>
-        <p>Desarrollador de software con experiencia en Java, Python y C.
-            <br>
-            Video De presentacion.
-        </p>
-        <video source="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXCgBwE%3D" type="video/mp4" controls>
-        </video>
-    </section>
+    <div class="info-container">
+        <section id="personal-info">
+            <h2 class="subtitle">Nombre</h2>
+            <p id="name">Julio Cesar Llerena Campi</p>
+            <figure>
+                <img src="WhatsApp Image 2026-05-17 at 10.48.45.jpeg" alt="Foto de perfil" id="photo">
+                <figcaption>Foto de perfil</figcaption>
+            </figure>
+        </section>
+        <section id="summary">
+            <h2 class="subtitle">Resumen</h2>
+            <p>Desarrollador de software con experiencia en Java, Python y C.
+                <br>
+                Video De presentacion.
+            </p>
+            <div class="video-container">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ&modestbranding=1&rel=0"
+                    title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
     <section id="education">
         <h2 class="subtitle">Educación</h2>
+        <p>Tecnico Electricista - Unidad Educativa Padre Marcos Benetazzo(2017-2023)</p>
         <p>Ingeniero en Ciencias de la Computación - Escuela Superior Politencica del Litoral (2023 - Actual)</p>
     </section>
 
-    <section id="skills">
-        <h2 class="subtitle">Habilidades</h2>
-        <ul>
-            <li>Java (Avanzado)</li>
-            <li>Python (Avanzado)</li>
-            <li>C (Básico)</li>
-            <li>Git (Intermedio)</li>
-            <li>HTML (Intermedio)</li>
-            <li>CSS (Básico)</li>
-            <li>MySQL (Intermedio)</li>
-            <li>Linux (Avanzado)</li>
-        </ul>
-    </section>
+    <div class="section-pair">
+        <section id="skills">
+            <h2 class="subtitle">Habilidades</h2>
+            <ul>
+                <li>Java (Intermedio)</li>
+                <li>Python (Intermedio)</li>
+                <li>C (Básico)</li>
+                <li>Git (Intermedio)</li>
+                <li>HTML (Intermedio)</li>
+                <li>CSS (Básico)</li>
+                <li>MySQL (Intermedio)</li>
+                <li>Linux (Avanzado)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 class="subtitle">Proyectos</h2>
+            <ol>
+                <li>Aplicacion de Planificacion de Vuelos (Java, AndroidStudio)</li>
+                <figure><img src="https://picsum.photos/200" alt="Foto de proyecto1">
+                    <figcaption>Vuela Vuela</figcaption>
+                </figure>
+                <li>Proyecto de Organizacion de Gastos Financieros(Java, AndroidStudio)</li>
+                <figure><img src="https://picsum.photos/200" alt="Foto de proyecto2">
+                    <figcaption>Tu contabilidad esta en tus manos</figcaption>
+                </figure>
+            </ol>
+        </section>
+    </div>
 
     <section id="work-experience">
         <h2 class="subtitle">Experiencia Laboral</h2>
@@ -65,36 +90,28 @@
             <li>Ninguna</li>
         </ul>
     </section>
-    <section id="projects">
-        <h2 class="subtitle">Proyectos</h2>
-        <ol>
-            <li>Aplicacion de Planificacion de Vuelos (Java, AndroidStudio)</li>
-            <figure><img src="https://picsum.photos/200" alt="Foto de proyecto1"><figcaption>Vuela Vuela</figcaption></figure>
-            <li>Proyecto de Organizacion de Gastos Financieros(Java, AndroidStudio)</li>
-            <figure><img src="https://picsum.photos/200" alt="Foto de proyecto2"><figcaption>Tu contabilidad esta en tus manos</figcaption></figure>
-        </ol>
-    </section>
 
-    <section id="testimonials">
-        <h2 class="subtitle" id="testimonio-title">Testimonios</h2>
-        <article>
-            <h3>Trabajo de calidad y compromiso</h3>
-            <p>He aprendido cómo crear páginas web limpias y funcionales.</p>
-        </article>
-        <article>
-            <h3>Experiencia práctica con HTML</h3>
-            <p>Crear páginas con secciones reales me ayudó a comprender mejor la estructura de un sitio.</p>
-        </article>
-        <article>
-            <h3>Presentación profesional</h3>
-            <p>Los testimonios muestran el valor del trabajo en diseño web.</p>
-        </article>
-    </section>
+    <div class="fullbox">
+        <section id="testimonials">
+            <h2 class="subtitle" id="testimonio-title">Testimonios</h2>
+            <article>
+                <h3>Trabajo de calidad y compromiso</h3>
+                <p>He aprendido cómo crear páginas web limpias y funcionales.</p>
+            </article>
+            <article>
+                <h3>Experiencia práctica con HTML</h3>
+                <p>Crear páginas con secciones reales me ayudó a comprender mejor la estructura de un sitio.</p>
+            </article>
+            <article>
+                <h3>Presentación profesional</h3>
+                <p>Los testimonios muestran el valor del trabajo en diseño web.</p>
+            </article>
+        </section>
 
-    <section id="contact">
-        <h2 class="subtitle">Contacto</h2>
-        <p>¿Tienes una propuesta o pregunta? ¡Me gustaría escuchar de ti!</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <section id="contact">
+            <h2 class="subtitle">Contacto</h2>
+            <p>¿Tienes una propuesta o pregunta? ¡Me gustaría escuchar de ti!</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
@@ -108,9 +125,10 @@
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
 </body>
+
 </html>
